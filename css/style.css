@@ -791,6 +791,38 @@ footer .credit a {
   .menu .row .menu-card {
     flex: 1 1 100%; /* 1 gambar per baris untuk HP */
   }
+  .modal-container {
+    width: 80%;
+    max-width: 250px; /* Batasi lebar maksimum */
+    margin: 10% auto; /* Kurangi margin atas agar modal lebih naik */
+    max-height: 400px; /* Batas tinggi modal */
+    overflow-y: auto; /* Scroll jika terlalu panjang */
+    padding: 1rem; /* Kurangi padding agar tidak terlalu lebar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Pusatkan modal */
+  }
+
+  .modal-content {
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .modal-content img {
+    width: 100%;
+    height: auto;
+    max-height: 180px; /* Batasi tinggi gambar agar tidak terlalu panjang */
+    object-fit: cover; /* Pastikan gambar tidak terdistorsi */
+  }
+
+  .modal-content .product-content {
+    width: 100%;
+  }
+
+  .modal-content a {
+    margin: 1rem auto;
+  }
 }
 
 /* REVIEW */
