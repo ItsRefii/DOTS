@@ -600,10 +600,11 @@ footer .credit a {
   position: relative;
   background-color: #fefefe;
   color: var(--bg);
-  margin: 15% auto;
-  padding: 1.2rem;
-  border: 1px solid #666;
-  width: 80%;
+  margin: 10% auto;
+  padding: 1.5rem;
+  border-radius: 15px; /* Bikin modal lebih smooth */
+  width: 60%; /* Lebih proporsional di layar besar */
+  max-width: 800px; /* Batas maksimum */
   animation: animateModal 0.5s;
 }
 
@@ -622,17 +623,23 @@ footer .credit a {
 .modal-container .close-icon {
   position: absolute;
   right: 1rem;
+  top: 1rem;
+  font-size: 1.5rem;
 }
 
 .modal-content {
   display: flex;
   flex-wrap: nowrap;
+  align-items: center; /* Biar gambar dan teks sejajar */
+  gap: 1.5rem; /* Jarak lebih pas */
 }
 
 .modal-content img {
-  height: 20rem;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
+  height: 18rem;
+  width: 40%; /* Biar gambar proporsional */
+  max-width: 300px; /* Jangan terlalu besar */
+  border-radius: 20px;
+  object-fit: cover;
 }
 
 .modal-content p {
@@ -643,12 +650,25 @@ footer .credit a {
 
 .modal-content a {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   width: 12rem;
   background-color: var(--primary);
   color: #fff;
   margin-top: 1rem;
   padding: 1rem 1.6rem;
+  border-radius: 10px; /* Biar tombol lebih smooth */
+  text-align: center;
+}
+.product-stars{
+  font-size: 1.7rem;
+  margin: 5px;
+  color: #eeff00;
+}
+
+.product-stars .star-full{
+  fill: #eeff00;
 }
 
 /* Media Queries */
